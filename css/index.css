@@ -137,16 +137,56 @@ header h3 {
     color: #0056b3;
 }
 
-@media (max-width: 480px) {
+@media (max-width: 320px) {
     header h3 {
-        font-size: 1.5rem;
+        font-size: 1.4rem;
     }
 
     .navItens {
         display: flex;
         flex-direction: column;
         align-items: center;
-        margin-top: 10px;
+    }
+
+    .navItens li {
+        margin: 8px 0;
+    }
+
+    .profile {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+        margin-top: 20px;
+    }
+
+    .profilePic {
+        max-width: 130px;
+    }
+
+    .profileText {
+        max-width: 100%;
+        padding: 10px;
+    }
+
+    .posts {
+        grid-template-columns: 1fr;
+    }
+
+    .post {
+        height: 120px;
+        padding: 10px;
+    }
+}
+
+@media (max-width: 375px) {
+    header h3 {
+        font-size: 1.6rem;
+    }
+
+    .navItens {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
 
     .navItens li {
@@ -156,7 +196,7 @@ header h3 {
     .profile {
         flex-direction: column;
         align-items: center;
-        gap: 20px;
+        gap: 25px;
     }
 
     .profilePic {
@@ -164,7 +204,8 @@ header h3 {
     }
 
     .profileText {
-        max-width: 100%;
+        max-width: 90%;
+        padding: 15px;
     }
 
     .posts {
@@ -172,7 +213,46 @@ header h3 {
     }
 
     .post {
-        height: 120px;
+        height: 130px;
+    }
+}
+
+@media (max-width: 480px) {
+    header h3 {
+        font-size: 1.7rem;
+    }
+
+    .navItens {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .navItens li {
+        margin: 12px 0;
+    }
+
+    .profile {
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+    }
+
+    .profilePic {
+        max-width: 160px;
+    }
+
+    .profileText {
+        max-width: 85%;
+        padding: 20px;
+    }
+
+    .posts {
+        grid-template-columns: 1fr;
+    }
+
+    .post {
+        height: 140px;
     }
 }
 
@@ -181,8 +261,26 @@ header h3 {
         font-size: 1.7rem;
     }
 
+    .nav {
+        flex-direction: column; 
+        align-items: center;    
+        justify-content: center; 
+    }
+
+
+    .navItens {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 10px;
+    }
+
+    .navItens li {
+        margin: 8px 0;
+    }
+
     .posts {
-        grid-template-columns: repeat(2, 1fr);  
+        grid-template-columns: 1fr; 
     }
 
     .profile {
@@ -216,3 +314,5 @@ header h3 {
         gap: 40px;
     }
 }
+
+
